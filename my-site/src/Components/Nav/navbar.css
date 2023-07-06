@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&family=Roboto+Mono:wght@100;600&display=swap');
+/* Define navbar container using Grid layout */
+.navbar {
+  display:flex;
+  position: absolute;
+  flex-direction: row;
+  align-items: center;
+  height: 75px;
+  min-height: 75px;
+}
+
+.logo {
+  font-family: 'Roboto Mono', monospace;
+  margin: .5rem;
+  display: block; 
+  color: white;
+  font-size: 30px;
+  font-weight: 100;
+  z-index: 9997;
+  /* letter-spacing: .1rem; */
+}
+
+.logo>span{
+  font-weight: 600;
+}
+
+
+/* Style navbar links */
+
+/* Change color of navbar links on hover */
+.navbar a:hover {
+  /* background-color: var(--light); */
+}
+
+/* Make navbar responsive */
+/* @media screen and (max-width: 350px) {
+  .navbar {
+    grid-template-columns: 1fr;
+    grid-gap: 0.5rem;
+  }
+
+  .navbar a {
+    padding: 10px;
+  }
+} */

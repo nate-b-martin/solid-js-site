@@ -1,0 +1,22 @@
+:root {
+  /* ----- Colors ----- */
+  --bg-color: ;
+  --medium-gray: #858786;
+  --light: #ffefd3;
+  --dark: #1f2041;
+  --accent-red: #a23e48;
+  --accent-blue: #63d2ff;
+
+  /* ------ Fonts ------ */
+  --hero-font-family: Aerial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw; /* Set the width to 100% of the viewport width */
+  height: 100vh; /* Set the height to 100% of the viewport height */
+  margin: 0;
+}

@@ -1,0 +1,55 @@
+/* Hamburger button styles */
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    cursor: pointer;
+    position: fixed;
+    right: 20px;
+    z-index: 9999;
+}
+
+.line {
+    width: 20px;
+    height: 2px;
+    background-color: #ffffff;
+    margin: 2px;
+}
+
+/* Drawer styles */
+.drawer {
+    width: 200px;
+    height: 100vh;
+    background-color: #f8f8f8;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9998;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(100%);
+}
+
+.drawer.open {
+    transform: translateX(0);
+}
+
+nav {
+    padding: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}

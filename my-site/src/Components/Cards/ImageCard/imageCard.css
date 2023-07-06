@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&family=Lato:wght@300;400&family=Roboto+Mono:wght@100;600&display=swap');
+
+
+
+.gridItem {
+    display: grid;
+    /* grid-template: "gridItem"; */
+    place-items: center;
+    place-content: center;
+    overflow: hidden;
+    max-height: clamp(450px, 50vw, 600px);
+
+    position: relative;
+    margin:0 auto;
+    /* width: 100%; */
+
+    /* bigger screen */
+
+        display: grid;
+        grid-row: auto;
+
+}
+
+.gridItem > * {
+    grid-area: gridItem;
+    max-width: 1000px;
+}
+
+.imageCard {
+    padding: 5px 5px 0 5px;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+
+    position: relative;
+    z-index: -1;
+    filter: brightness(.7);
+}
+
+.imageText {
+    position: relative;
+    z-index: 1;
+    padding: .5rem;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: clamp(2rem, 9vw, 4rem);
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+
+/* media query */
+@media screen and (min-width: 768px) {
+    .imageText{
+        font-size: clamp(2rem, 5vw, 4rem);
+        color: black;
+    }
+
+    .gridItem {
+    }
+}
+
