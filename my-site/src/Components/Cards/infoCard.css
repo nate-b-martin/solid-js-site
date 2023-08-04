@@ -1,8 +1,0 @@
-.card {
-    background-color: var(--medium-gray);
-    width: 100%;
-}
-.cardImage {
-    width: 100%;
-    object-fit: contain;
-}

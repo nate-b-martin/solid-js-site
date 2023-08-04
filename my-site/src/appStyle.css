@@ -1,22 +1,17 @@
 :root {
-  /* ----- Colors ----- */
-  --bg-color: ;
-  --medium-gray: #858786;
-  --light: #ffefd3;
-  --dark: #1f2041;
-  --accent-red: #a23e48;
-  --accent-blue: #63d2ff;
-
-  /* ------ Fonts ------ */
-  --hero-font-family: Aerial, sans-serif;
 }
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-body {
-  width: 100vw; /* Set the width to 100% of the viewport width */
-  height: 100vh; /* Set the height to 100% of the viewport height */
-  margin: 0;
+.appContainer {
+  max-width: 1200px;
+
+  /* center all items */
+  margin: 0 auto;
+  align-items: center;
+  justify-items: center;
 }

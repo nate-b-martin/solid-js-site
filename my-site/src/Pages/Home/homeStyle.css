@@ -1,0 +1,38 @@
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    place-items: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    gap: 1rem;
+    /* drop shadow bottom and right */
+}
+
+.heroCard {
+    grid-column-start: 3;
+    grid-column-end: 11;
+}
+
+.social-icons {
+    grid-column-start: 3;
+    grid-column-end: 11;
+}
+
+.social-icons a {
+  margin-right: 10px;
+    padding: .5rem;
+}
+
+.social-icons a img {
+    margin: .5rem;
+    width: clamp(30px, 4vw, 50px);
+    height: clamp(30px, 4vw, 50px);
+
+}
+
+ul {
+    margin: 1rem;
+    list-style: outside;
+    text-align: left;
+}

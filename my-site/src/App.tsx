@@ -10,7 +10,7 @@ import Gallery from "./Pages/Gallery";
 
 const App: Component = () => {
   return (
-    <div>
+    <div class="appContainer">
       <NavBar/>
       <Routes>
         <Route path="/" element={<Home />} />

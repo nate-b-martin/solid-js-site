@@ -1,20 +1,16 @@
-import { Component } from "solid-js";
-import './heroCard.css'
+import './HeroCard.css';
 
-interface Props {
-    title: string;
-    imageSrc: string;
-    cardText: string;
+interface cardProps  {
+  src: string;
+  alt: string;
 }
-const HeroCard: Component<Props> = (props) => {
-  
-  return (
-    // create a card with image and title
-    <div class="heroCard gridItem">
-      <p class="heroText">{props.cardText}</p>
-      <img class="heroImage" src={props.imageSrc} alt="tile image"/>
-    </div>
+const HeroCard = (props: cardProps) => {
 
+  return (
+    <div class="hero-card">
+      <div class="hero-card-background"></div>
+      <img class="hero-card-image" src={props.src} alt={props.alt} />
+    </div>
   );
 };
 

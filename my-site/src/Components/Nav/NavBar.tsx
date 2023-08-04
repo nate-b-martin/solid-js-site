@@ -14,7 +14,7 @@ const NavBar: Component = (props) => {
     //create navbar with links home, about, projects, contact
     <div class="navbar">
       <div class="logo">
-        <p>Nathan<span>Martin</span></p>
+        <h1>{`<NM/>`}</h1>
       </div>
       <NavDrawer/>
     </div>
