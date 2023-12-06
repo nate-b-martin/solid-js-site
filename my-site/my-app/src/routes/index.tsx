@@ -1,11 +1,10 @@
-import {Button} from "@suid/material"
+import styles from "../styles/index.module.css"
+import Hero from '../components/Cards/Hero';
 
 export default function Home() {
   return (
-    <main>
-      <div>
-        Hello There
-      </div>
+    <main class={styles.heroContent}>
+      <Hero></Hero>
     </main>
   );
 }

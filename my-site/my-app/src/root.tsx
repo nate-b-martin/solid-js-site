@@ -23,6 +23,7 @@ function GlobalStyles() {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
+      background-color: #272727;
     }
       body {
         font-family: Gordita, Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
