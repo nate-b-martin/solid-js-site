@@ -1,24 +1,29 @@
-import {A} from "solid-start"
-import {Divider} from "@suid/material"
-import styles from "./bar.module.css"
+import { Nav, Container, Navbar } from "solid-bootstrap";
+import {Divider} from "@suid/material";
+import { Component } from "solid-js";
+import style from './bar.module.css';
 
-  
-export default function Bar() {
+
+const Bar: Component<{}> = () => {
   return (
-  <header class={styles.header}>
-    <div class={styles.container}>
-      <nav>
-        <div class="logo">
-          <h3>Nathan Martin</h3>
-        </div>
-        <ul>
-          <li><A href="/">About</A></li>
-          <li><A href="/projects">Projects</A></li>
-          <li><A href="/gallery">Gallery</A></li>
-        </ul>
-      </nav>
-    <Divider class={styles.divider}/>
-    </div>
-  </header>
+  <>
+    <Navbar variant="dark" expand="lg" fixed="top">
+      <Container>
+        <Navbar.Brand href="#home">Solid-Bootstrap</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav" class={style['navbar-collapse']}>
+          <Nav class="navbar-nav">
+            <Nav.Link class={style['nav-link']} href="/">Home</Nav.Link>
+            <Nav.Link class={style['nav-link']} href="/projects">Projects</Nav.Link>
+            <Nav.Link class={style['nav-link']} href="/gallery">Gallery</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+    <Divider sx={{margin: "40px"}}></Divider>
+  </>
+
   )
 };
+
+export default Bar;

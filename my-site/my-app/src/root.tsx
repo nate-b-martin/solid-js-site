@@ -20,51 +20,13 @@ function GlobalStyles() {
   css`
     @global {
     * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      background-color: #272727;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+    body {
+      background: #272727;
     }
-      body {
-        font-family: Gordita, Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-          sans-serif;
-      }
-
-      a {
-        margin: .5rem;
-      }
-
-      main {
-        text-align: center;
-        padding: 1em;
-        margin: 0 auto;
-      }
-
-      h1 {
-        color: #335d92;
-        text-transform: uppercase;
-        font-size: 4rem;
-        font-weight: 100;
-        line-height: 1.1;
-        margin: 4rem auto;
-        max-width: 14rem;
-      }
-
-      p {
-        max-width: 14rem;
-        margin: 2rem auto;
-        line-height: 1.35;
-      }
-
-      @media (min-width: 480px) {
-        h1 {
-          max-width: none;
-        }
-
-        p {
-          max-width: none;
-        }
-      }
     }
   `;
   return null;
@@ -81,6 +43,7 @@ export default function Root() {
           <Title>SolidStart - Bare</Title>
           <Meta charset="utf-8" />
           <Meta name="viewport" content="width=device-width, initial-scale=1" />
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"/>
         </Head>
         <Body>
           <GlobalStyles />
@@ -93,6 +56,7 @@ export default function Root() {
             </ErrorBoundary>
           </Suspense>
           <Scripts />
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         </Body>
       </Html>
     </StyleRegistry>

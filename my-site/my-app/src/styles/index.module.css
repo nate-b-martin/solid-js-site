@@ -1,4 +1,68 @@
-.heroContent {
-    color: white;
-    margin-top: 60px;
+:root {
+    --bg-color: #272727;
+}
+
+.heroCard{
+    margin: 0 auto;
+    float: none;
+    width: auto;
+    margin-bottom: 10px;
+    max-width: 90%;
+    background: var(--bg-color);
+}
+
+.welcomeText{
+    font-family: Sora;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 72px; /* 128.571% */
+    letter-spacing: 1px;
+    background: linear-gradient(134deg, #3BF686 40.75%, #4CA9FF 90.52%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bioCardRow {
+    justify-content: center;
+    gap: 1rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.bioCard {
+    color: #FBFBFB;
+    text-align: left;
+    justify-content: center;
+    background-color: var(--bg-color);
+    border: none;
+}
+
+.cardImg {
+    width: 155px;
+    height: 155px;
+    object-fit: cover;
+    border:none;
+}
+
+.cardTitle {
+    /* Heading/H4 */
+    font-family: Sora;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 72px; /* 257.143% */
+    letter-spacing: 1px;
+}
+
+.cardText {
+    color: #d1baba;
+    /* Body/Normal */
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 177.778% */
+    letter-spacing: 0.252px;
 }

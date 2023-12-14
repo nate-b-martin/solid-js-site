@@ -1,14 +1,9 @@
-.container {
-    /* background-color: aliceblue; */
-}
 
-.title {
-    font-size: 3rem;
-    /* background-color: aliceblue; */
-}
-
-.paper {
-    padding: 1rem;
-    margin: 1rem;
-    /* background-color: aliceblue; */
+.heroCard{
+    margin: 0 auto;
+    float: none;
+    width: auto;
+    margin-bottom: 10px;
+    max-width: 90%;
+    background: transparent;
 }

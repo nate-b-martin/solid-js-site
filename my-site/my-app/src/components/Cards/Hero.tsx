@@ -1,16 +1,24 @@
-import { Component } from "solid-js";
-import {Paper} from "@suid/material";
+import { Component, For, JSX } from "solid-js";
+import { Card } from "solid-bootstrap";
 import styles from "./Hero.module.css";
 
-const Hero: Component<{}> = (props) => {
+
+type HeroProps = {
+    children?:JSX.Element;
+    class?:CSSModuleClasses[string];
+}
+
+const Hero: Component<HeroProps> = (props:HeroProps) => {
+
+    const fullStyle:string = `${styles.card} ${props.class}`; 
+
     return (
-        <div class={styles.container}>
-            <Paper sx={{backgroundColor: "aliceblue", color: "red"}}>
-                <h1 class={styles.title}>
-                    Welcome to my digital space! Explore my thoughts, creations, and snippets of life, and thank you for visiting – enjoy your stay!
-                </h1>
-            </Paper>
-        </div>
+        <Card class={fullStyle}>
+            <Card.Body>
+                {props.children}
+            </Card.Body>
+        </Card>
+
     )
 };
 
