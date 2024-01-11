@@ -25,7 +25,7 @@ function GlobalStyles() {
         padding: 0;
       }
     body {
-      background: #272727;
+    //   background: #272727;
     }
     }
   `;

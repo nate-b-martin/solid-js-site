@@ -1,0 +1,44 @@
+@import './root.module.css';
+
+.navLinkGroup {
+    display:flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.navLink {
+    text-decoration: none;
+    list-style: none;
+
+    color: var(--secondary-color);
+}
+
+.navLink:hover {
+    color: var(--primary-color);
+}
+
+.drawerToggle {
+    display:none;
+}
+
+@media (max-width: 800px) {
+    .drawerToggle {
+        display: block;
+    }
+
+    .drawerLink {
+        text-decoration: none;
+        list-style: none;
+
+        color: var(--secondary-color);
+    }
+
+    .drawerLink:hover {
+        color: var(--primary-color);
+    }
+
+    .navLinkGroup {
+        display: none;
+    }
+
+}

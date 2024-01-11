@@ -1,0 +1,11 @@
+:root {
+  --primary-color: #333;
+  --secondary-color: #666;
+  --accent-color: #999;
+  --font-family: 'system-ui', sans-serif;
+  --font-size-body: 1rem;
+  --font-size-headings: 2rem;
+  --font-size-links: 1rem;
+  --font-size-buttons: 1rem;
+  --font-size-paragraphs: 1rem;
+}

@@ -1,35 +1,40 @@
-import { Nav, Container, Navbar } from "solid-bootstrap";
-import { Divider } from "@suid/material";
 import { Component } from "solid-js";
-import style from "./bar.module.css";
+import {A} from "solid-start";
+import NavDrawer from "./NavDrawer";
+import { Navbar, Container, Nav, NavDropdown, Offcanvas } from "solid-bootstrap";
+import style from "../../styles/bar.module.css";
 
 const Bar: Component<{}> = () => {
 	return (
-		<>
-			<Navbar variant="dark" expand="lg" fixed="top">
-				<Container>
-					<Navbar.Brand href="#home">Solid-Bootstrap</Navbar.Brand>
-					<Navbar.Toggle aria-controls="basic-navbar-nav" />
-					<Navbar.Collapse
-						id="basic-navbar-nav"
-						class={style["navbar-collapse"]}
-					>
-						<Nav class="navbar-nav">
-							<Nav.Link class={style["nav-link"]} href="/">
-								Home
-							</Nav.Link>
-							<Nav.Link class={style["nav-link"]} href="/projects">
-								Projects
-							</Nav.Link>
-							<Nav.Link class={style["nav-link"]} href="/gallery">
-								Gallery
-							</Nav.Link>
+		<Navbar variant="light" expand={false}>
+			<Container fluid>
+				<Navbar.Brand href="/">Nathan Martin</Navbar.Brand>
+				<Nav class={`me-auto ${style.navLinkGroup}`}>
+					<Nav.Link href="/"><A class={style.navLink} href="/">Home</A></Nav.Link>
+					<Nav.Link href="/resume"><A class={style.navLink} href="/resume">Resume</A></Nav.Link>
+					<Nav.Link href="/gallery"><A class={style.navLink} href="/gallery">Gallery</A></Nav.Link>
+				</Nav>
+
+				<Navbar.Toggle class={style.drawerToggle} aria-controls="offcanvasNavbar" />
+				<Navbar.Offcanvas
+					id="offcanvasNavbar"
+					aria-labelledby="offcanvasNavbarLabel"
+					placement="top"
+				>
+					<Offcanvas.Header closeButton>
+						{/* <Offcanvas.Title id="offcanvasNavbarLabel">Where do you want to go?</Offcanvas.Title> */}
+					</Offcanvas.Header>
+
+					<Offcanvas.Body>
+						<Nav class="justify-content-end flex-grow-1 pe-3">
+							<Nav.Link href="/"><A class={style.drawerLink} href="/">Home</A></Nav.Link>
+							<Nav.Link href="/resume"><A href="/resume" class={style.drawerLink}>Resume</A></Nav.Link>
+							<Nav.Link href="/gallery"><A class={style.drawerLink} href="/gallery">Gallery</A></Nav.Link>
 						</Nav>
-					</Navbar.Collapse>
-				</Container>
-			</Navbar>
-			<Divider sx={{ margin: "40px" }}></Divider>
-		</>
+					</Offcanvas.Body>
+				</Navbar.Offcanvas>
+			</Container>
+		</Navbar>
 	);
 };
 

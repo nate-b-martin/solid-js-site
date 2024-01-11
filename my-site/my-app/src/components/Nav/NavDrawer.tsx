@@ -18,6 +18,7 @@ import { createMutable } from "solid-js/store";
 import MenuIcon from "@suid/icons-material/Menu";
 import MailIcon from "@suid/icons-material/Mail";
 import InboxIcon from "@suid/icons-material/MoveToInbox";
+import style from "./../../styles/navdrawer.module.css"
 
 type Anchor = NonNullable<DrawerProps["anchor"]>;
 
@@ -47,7 +48,7 @@ export default function NavDrawer() {
 			onKeyDown={toggleDrawer(anchor, false)}
 		>
 			<List>
-				{["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
+				{["Home", "Resume", "Gallery"].map((text, index) => (
 					<ListItem disablePadding>
 						<ListItemButton>
 							<ListItemIcon>
@@ -62,7 +63,7 @@ export default function NavDrawer() {
 	);
 
 	return (
-		<div>
+		<div class={style.drawer}>
 			{(["left"] as Anchor[]).map((anchor) => (
 				<>
 					<IconButton
