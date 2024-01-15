@@ -25,7 +25,7 @@ const Bar: Component<{}> = () => {
 						{/* <Offcanvas.Title id="offcanvasNavbarLabel">Where do you want to go?</Offcanvas.Title> */}
 					</Offcanvas.Header>
 
-					<Offcanvas.Body>
+					<Offcanvas.Body style={{"background-color": "#efeaea3d"}}>
 						<Nav class="justify-content-end flex-grow-1 pe-3">
 							<Nav.Link href="/"><A class={style.drawerLink} href="/">Home</A></Nav.Link>
 							<Nav.Link href="/resume"><A href="/resume" class={style.drawerLink}>Resume</A></Nav.Link>

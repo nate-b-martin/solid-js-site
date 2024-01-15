@@ -24,6 +24,8 @@
 @media (max-width: 800px) {
     .drawerToggle {
         display: block;
+        border-width: none;
+        box-shadow: none;
     }
 
     .drawerLink {

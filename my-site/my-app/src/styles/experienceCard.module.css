@@ -1,0 +1,48 @@
+@import './root.module.css';
+
+
+/* -------- EXPERIENCE CARD --------- */
+
+.experienceCard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 4rem;
+
+    margin-left: 10%;
+    margin-right: 10%;
+
+    place-content: center;
+    /* place-items: center; */
+}
+
+.experienceItem > img {
+    width: clamp(50%, 2vw, 100%);
+    object-fit: contain;
+    border-radius: 1rem;
+}
+
+.experienceTitle {
+    font-size: clamp(1rem, 4vw, 4.5rem);
+    font-weight: bold;
+}
+
+.experienceItem > p {
+    font-size: clamp(1rem, 2vw, 3rem);
+    color: var(--secondary-color);
+}
+
+/* .experienceCard:nth-child(odd) > .experienceItem:nth-child(1) {
+    order:2
+} */
+
+.reverse {
+    order: 2;
+    justify-self: end;
+}
+
+/* @media screen and (max-width: 700px) {
+    
+    .experienceCard:nth-child(odd) > .experienceItem:nth-child(1) {
+        order:1
+    }
+} */
