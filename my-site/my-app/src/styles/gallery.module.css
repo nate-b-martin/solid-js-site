@@ -1,0 +1,24 @@
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery {
+        grid-template-columns: repeat(1, 1fr);
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+}

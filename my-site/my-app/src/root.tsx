@@ -25,7 +25,8 @@ function GlobalStyles() {
         padding: 0;
       }
     body {
-    //   background: #272727;
+		// margin-left: 15%;
+		// margin-right: 15%;
     }
     }
   `;

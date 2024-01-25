@@ -6,10 +6,10 @@ import style from "../../styles/bar.module.css";
 
 const Bar: Component<{}> = () => {
 	return (
-		<Navbar variant="light" expand={false}>
+		<Navbar class={style.navbar} variant="light" expand={false}>
 			<Container fluid>
 				<Navbar.Brand href="/">Nathan Martin</Navbar.Brand>
-				<Nav class={`me-auto ${style.navLinkGroup}`}>
+				<Nav class={`${style.navLinkGroup}`}>
 					<Nav.Link href="/"><A class={style.navLink} href="/">Home</A></Nav.Link>
 					<Nav.Link href="/resume"><A class={style.navLink} href="/resume">Resume</A></Nav.Link>
 					<Nav.Link href="/gallery"><A class={style.navLink} href="/gallery">Gallery</A></Nav.Link>
